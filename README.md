@@ -37,7 +37,7 @@ The default launcher for niri is fuzzel, installed with:
 ```bat
 xbps-install fuzzel
 ```
-To use bigger fonts and a dark theme I generated the following config file
+To use bigger fonts and a dark theme I generated this [config file](.config/fuzzel/fuzzel.ini)
 
 [back](#table-of-contents)
 
@@ -51,7 +51,7 @@ The default terminal for niri, installed with:
 xbps-install alacritty
 ```
 
-To increase font size and enable tranparency, refer to this config file.
+To increase font size and enable tranparency, refer to this [config file](.config/alacritty/alacritty.toml)
 
 [back](#table-of-contents)
 
