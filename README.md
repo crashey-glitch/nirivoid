@@ -8,6 +8,7 @@ void linux niri configuration
 
 ## Table of contents
 - [Basics](#basics)
+- [LightDM](#lightdm)
 - [fuzzel](#fuzzel)
 - [alacritty](#alacritty)
 - [Keys](#keys)
@@ -26,6 +27,15 @@ xbps-install niri
 ```
 
 dbus-run-session niri --session
+
+[back](#table-of-contents)
+
+---
+# LightDM
+
+Configuring lightdm for 4K display and with a nice wallpaper from [osowoso art](https://art.osowoso.org/).
+
+See [config file](./etc/lightdm/lightdm-gtk-greeter.conf)
 
 [back](#table-of-contents)
 
