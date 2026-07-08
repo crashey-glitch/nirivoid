@@ -76,6 +76,7 @@ The default niri configuration relies on english keyboard. I had to tinker with 
 |super+t| terminal|
 |super+b| web browser|
 |super+d| app launcher|
+|super+e| file explorer|
 |super+q| close window|
 |super+f| fullscreen mode|
 |super+v| floating mode|
@@ -84,6 +85,7 @@ The default niri configuration relies on english keyboard. I had to tinker with 
 |ctrl+super+left/right| move column|
 |super+pgup/pgdown| change workspace|
 |ctrl+super+pgup/pgdown| move to workspace|
+|super+plus/minus| increase/reduce column size|
 
 [back](#table-of-contents)
 
@@ -91,11 +93,12 @@ The default niri configuration relies on english keyboard. I had to tinker with 
 
 # Session environment
 
-Sound, thunar mounts and steam
-
 ```bat
 xbps-install xwayland-satellite xorg-server-xwayland
 ```
+To allow for steam to run titles.
+
+To make sound work the pipewire process has to start on launch. The same is for polkit to allow thunar to mount partitions. 
 
 [back](#table-of-contents)
 
