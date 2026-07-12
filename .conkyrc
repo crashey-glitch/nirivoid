@@ -1,0 +1,30 @@
+conky.config = {
+    out_to_x = false,
+    out_to_wayland = true,
+    background = false,
+    update_interval = 1.0,
+    total_run_times = 0,
+    use_xft = true,
+    font = 'Fira Sans:size=12',
+
+    alignment = 'bottom_right',
+    gap_x = 20,
+    gap_y = 10,
+
+    -- CONFIGURAZIONE WAYLAND DEFINITIVA PER TRASPARENZA E LAYER
+    own_window = true,
+    own_window_type = 'desktop', -- Ripristiniamo desktop
+    own_window_transparent = true,
+    own_window_argb_visual = true, -- Forza il canale Alpha per la trasparenza
+    own_window_argb_value = 0,     -- 0 significa 100% trasparente
+    own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
+    
+    draw_shades = false,
+    draw_outline = false,
+    draw_borders = false,
+    default_color = 'FFFFFF',
+}
+
+conky.text = [[
+${font Roboto:size=60}${alignr}${time %H:%M}${font}
+]]
