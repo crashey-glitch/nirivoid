@@ -12,6 +12,7 @@ void linux niri configuration
 - [fuzzel](#fuzzel)
 - [alacritty](#alacritty)
 - [Keys](#keys)
+- [Conky](#conky)
 - [Session environment](#session-environment)
 
 ---
@@ -86,6 +87,18 @@ The default niri configuration relies on english keyboard. I had to tinker with 
 |super+pgup/pgdown| change workspace|
 |ctrl+super+pgup/pgdown| move to workspace|
 |super+plus/minus| increase/reduce column size|
+
+[back](#table-of-contents)
+
+---
+
+# Conky
+
+I need a clock on the desktop, but to embrace minimalism it's just a toggle for a basic conky.
+
+The conky configuration is [this](.conkyrc), ready for wayland and niri.
+
+The activation script is just a toggle with pgrep, you can take a look [here](./scripts/toggleconky.bash)
 
 [back](#table-of-contents)
 
