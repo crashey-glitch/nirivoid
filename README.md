@@ -106,12 +106,14 @@ The activation script is just a toggle with pgrep, you can take a look [here](./
 
 # Session environment
 
+Added a couple packages to allow Steam to run everything
+
 ```bat
 xbps-install xwayland-satellite xorg-server-xwayland
 ```
-To allow for steam to run titles.
 
-To make sound work the pipewire process has to start on launch. The same is for polkit to allow thunar to mount partitions. 
+To make sound work the pipewire process has to start on launch. The same is for polkit to allow thunar to mount partitions.
+See the spaw-at-start section in my [niri config](.config/niri/config.kdl)
 
 [back](#table-of-contents)
 
