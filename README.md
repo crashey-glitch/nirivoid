@@ -13,6 +13,7 @@ void linux niri configuration
 - [alacritty](#alacritty)
 - [Keys](#keys)
 - [Conky](#conky)
+- [Screenlock](#screenlock)
 - [Session environment](#session-environment)
 
 ---
@@ -99,6 +100,21 @@ I need a clock on the desktop, but to embrace minimalism it's just a toggle for 
 The conky configuration is [this](.conkyrc), ready for wayland and niri.
 
 The activation script is just a toggle with pgrep, you can take a look [here](./scripts/toggleconky.bash)
+
+[back](#table-of-contents)
+
+---
+
+# Screenlock
+
+Here is a basic config to lock the screen with a simple blur effect. Packages needed:
+
+```bat
+xbps-install swaylock grim ImageMagick
+```
+The basic swaylock is not great, so [this short script](./scripts/screenlock.bash) takes a temporary screenshot and blurs it to use it as a background
+
+I added the keybind to my [niri config](.config/niri/config.kdl)
 
 [back](#table-of-contents)
 
