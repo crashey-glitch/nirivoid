@@ -9,12 +9,13 @@ void linux niri configuration
 ## Table of contents
 - [Basics](#basics)
 - [LightDM](#lightdm)
-- [fuzzel](#fuzzel)
-- [alacritty](#alacritty)
+- [Fuzzel](#fuzzel)
+- [Alacritty](#alacritty)
 - [Keys](#keys)
 - [Conky](#conky)
 - [Screenlock](#screenlock)
 - [Session environment](#session-environment)
+- [Portals](#portals)
 
 ---
 # Basics
@@ -129,7 +130,30 @@ xbps-install xwayland-satellite xorg-server-xwayland
 ```
 
 To make sound work the pipewire process has to start on launch. The same is for polkit to allow thunar to mount partitions.
-See the spaw-at-start section in my [niri config](.config/niri/config.kdl)
+See the spawn-at-start section in my [niri config](.config/niri/config.kdl)
+
+[back](#table-of-contents)
+
+---
+
+# Portals
+
+Packages to enable screen sharing in discord and others
+
+```bat
+xbps-install xdg-desktop-portal xdg-desktop-portal-gnome
+```
+
+Generated a [config file for portals](.config/xdg-desktop-portal/niri-portals.conf)
+
+Updated spawn-at-start section in my [niri config](.config/niri/config.kdl)
+
+To maintain GTK themes, this command is also needed:
+```bat
+gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
+```
+
+Also conky somehow decided to not work anymore, updated my script with -9 option to pkill command, now in my [conky toggle script](./scripts/toggleconky.bash)
 
 [back](#table-of-contents)
 
