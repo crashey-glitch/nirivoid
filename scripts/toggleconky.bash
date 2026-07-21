@@ -1,11 +1,11 @@
 #!/bin/bash
 
-# Controlla se conky è in esecuzione
-if pgrep -x "conky" > /dev/null
-then
-    # Se è attivo, lo chiude
-    pkill -x "conky"
+# Cerca solo l'eseguibile binario esatto di conky
+if pgrep -x conky > /dev/null; then
+    pkill -9 -x conky
 else
-    # Se non è attivo, lo avvia puntando alla tua configurazione
-    conky &
+    # nohup e disown staccano conky dal terminale/script
+    nohup conky >/dev/null 2>&1 &
+    disown
 fi
+
