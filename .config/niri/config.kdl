@@ -271,6 +271,8 @@ layout {
 // This line starts waybar, a commonly used bar for Wayland compositors.
 //spawn-at-startup "waybar"
 spawn-at-startup "dbus-update-activation-environment" "--all"
+spawn-at-startup "/usr/libexec/xdg-desktop-portal" "-r"
+spawn-at-startup "/usr/libexec/xdg-desktop-portal-gtk" "-r"
 spawn-at-startup "dbus-run-session" "/usr/libexec/xfce-polkit"
 //spawn-at-startup "/bin/sh" "-c" "~/.config/niri/scripts/start-audio.sh"
 
