@@ -314,8 +314,8 @@ animations {
 }
 
 cursor {
-    xcursor-theme "breeze-cursors"
-    xcursor-size 40
+    xcursor-theme "Adwaita"
+    xcursor-size 32
 }
 
 // Window rules let you adjust behavior for individual windows.
