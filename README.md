@@ -52,6 +52,8 @@ xbps-install fuzzel
 ```
 To use bigger fonts and a dark theme I generated this [config file](.config/fuzzel/fuzzel.ini)
 
+To add a fuzzel entry to discord (installed from website, since it was not in the repos) I had to generate the (appropriate desktop file)[.local/share/applications/discord.desktop]
+
 [back](#table-of-contents)
 
 ---
