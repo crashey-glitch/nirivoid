@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Discord
+Exec=discord
+Icon=/home/trogoz/Scaricati/Discord/discord.png
+Type=Application
+Categories=Network
+Terminal=false
