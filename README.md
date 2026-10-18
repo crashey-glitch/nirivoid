@@ -28,8 +28,8 @@ In this branch I use niri with no preconfigured shell. The command to install th
 ```bat
 xbps-install niri 
 ```
-
-dbus-run-session niri --session
+It is vital to create the appropriate wayland session with dbus enabled.
+See [wayland session file](./usr/share/wayland-session/niri.desktop)
 
 [back](#table-of-contents)
 
